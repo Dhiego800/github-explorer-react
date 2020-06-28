@@ -1,12 +1,11 @@
 import React, { useState, useEffect, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
-
 import { FiChevronRight } from 'react-icons/fi';
+
 import api from '../../services/api';
 
 import logoImg from '../../assets/logo.svg';
 import { Title, Form, Repositories, Error } from './styles';
-import Repository from '../Repository';
 
 interface Repository {
   full_name: string;
